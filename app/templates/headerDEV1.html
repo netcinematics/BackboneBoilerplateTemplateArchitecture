@@ -1,0 +1,690 @@
+<!--header>
+  <img src="/assets/img/nashheader9.png" height="100px">
+  <hr>
+  <div>
+    <h2 class="congrats">Header!</h2>
+    <h2>Seeing this means you have installed Backbone Boilerplate correctly.</h2>
+
+    <p>Now that you have the easiest and most-powerful Backbone boilerplate available,
+    you're probably wondering how to use it to start building applications...</p>
+  </div>
+</header-->
+<!--style type="text/css">
+
+#headerNav li {
+    float: left;
+    margin: 0 20px;
+    height: 100px;
+}
+
+#headerNav li img{
+     height: 100px;
+} 
+
+#headerNav li {
+  margin:0;
+  padding:0;
+  height: 100px;
+
+}
+
+#menuNav a, #menuNav a:link, #menuNav a:visited {
+  width: 68px;
+  height: 100px;
+}
+
+#menuNav li {
+  background:url("./assets/img/TopRibbonUp.png") no-repeat bottom;
+}
+
+#menuNav a:hover img {
+  visibility:hidden;
+}
+
+/*
+#menuNav a {
+  background:url("./assets/img/TopRibbonUp.png") no-repeat;
+  background-position: 0px -5px;  
+}
+#menuNav a:hover {
+  background-position: 0px 0px;
+}*/
+
+/*
+#headerNav li a {
+    display: block;
+    width: 120px;
+    height: 80px;
+    background: #AA030B;
+    padding: 70px 0 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    position: relative;
+}
+
+#headerNav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 135px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+}​
+
+.nav {
+  margin:0;
+  padding:0;
+  background:url("./assets/img/TopRibbonDown.png") no-repeat;
+}
+
+.nav a, .nav a:link, .nav a:visited {
+  display:block;
+  width: 68px;
+  height: 155px;
+}
+
+.nav a:hover img {
+  visibility:hidden;
+}
+*/
+</style-->
+ <!--nav id="headerNav">
+  <ul>
+   <li><a href="/"><img src="/assets/img/NashHeaderUp.png" height="100px"></a></li>
+   <li>
+      <ul id="menuNav">
+       <li id="linkOne"><a href="/"><img src="./assets/img/TopRibbonDown.png" alt="" /></a></li>
+      </ul>    
+   </li>
+  </ul>
+ </nav-->
+
+<style type="text/css">
+
+.backgroundGradient {
+  height:100px;
+  background-image: -moz-linear-gradient(top, #000000, #ffffff); /* FF3.6 */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(1, #ffffff)); /* Safari 4+, Chrome 2+ */
+  background-image: -webkit-linear-gradient(top, #000000, #ffffff); /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(top, #000000, #ffffff); /* Opera 11.1+ */
+  background-image: -ms-linear-gradient(top, #000000, #ffffff); /* IE10+ */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')"; /* IE8+ */
+  background-image: linear-gradient(top, #000000, #ffffff);
+
+}
+
+.backgroundWhiteGradient {
+  height:100px;
+  background-image: -moz-linear-gradient(top, #cccccc, #ffffff); /* FF3.6 */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(1, #ffffff)); /* Safari 4+, Chrome 2+ */
+  background-image: -webkit-linear-gradient(top, #cccccc, #ffffff); /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(top, #cccccc, #ffffff); /* Opera 11.1+ */
+  background-image: -ms-linear-gradient(top, #cccccc, #ffffff); /* IE10+ */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')"; /* IE8+ */
+  background-image: linear-gradient(top, #cccccc, #ffffff);
+
+}
+
+.backgroundGradient2 {
+  height:30px;
+  background-image: -moz-linear-gradient(top, grey, #ffffff); /* FF3.6 */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, grey), color-stop(1, #ffffff)); /* Safari 4+, Chrome 2+ */
+  background-image: -webkit-linear-gradient(top, grey, #ffffff); /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(top, grey, #ffffff); /* Opera 11.1+ */
+  background-image: -ms-linear-gradient(top, grey, #ffffff); /* IE10+ */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='grey', endColorstr='#ffffff'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='grey', endColorstr='#ffffff')"; /* IE8+ */
+  background-image: linear-gradient(top, grey, #ffffff);
+
+}
+.backgroundGradient3 {
+  height:30px;
+  background-image: -moz-linear-gradient(top,#ffffff, grey); /* FF3.6 */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, grey), color-stop(1, #ffffff)); /* Safari 4+, Chrome 2+ */
+  background-image: -webkit-linear-gradient(top,#ffffff, grey); /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(top,#ffffff, grey); /* Opera 11.1+ */
+  background-image: -ms-linear-gradient(top,#ffffff, grey); /* IE10+ */
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='grey', endColorstr='#ffffff'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='grey', endColorstr='#ffffff')"; /* IE8+ */
+  background-image: linear-gradient(top,#ffffff, grey);
+
+}
+
+
+#headerNav li {
+    float: left;
+    margin: 0 20px;
+    height: 100px;
+}
+/*
+#headerNav li img{
+     height: 100px;
+} */
+
+#headerNav li {
+  margin:0;
+  padding:0;
+  /*border-top: 2px solid #BD3939;*/
+  /*height: 100px;*/
+
+}
+
+</style>
+
+<style type="text/css">
+.cf {
+  position:relative;
+  height:100px;
+  width:65px;
+  margin:0 auto;  
+}
+.cf .top, .cf .bottom {
+  position:absolute;
+  left:0;
+  top:0;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out; 
+  transition: opacity .25s ease-in-out;
+
+}
+
+.cf img.top:hover {
+  opacity:0;
+}
+
+.thumb{
+  position:absolute;  
+  left:9px;
+  bottom:45px;
+/*
+box-shadow: 
+  0 1px 1px #333, 
+  0 -1px 1px #666, 
+  inset 0 -1px 1px rgba(0,0,0,0.5), 
+  inset 0 1px 1px rgba(255,255,255,0.8); 
+*/
+
+  border: outset #bd3939 1px;
+
+}
+</style>
+
+<style type="text/css">
+
+    /*Border-Gradient*/
+    .g {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% );
+    padding: 2px;
+    }
+
+    /*.g > div { background: #fff; }*/
+</style>
+
+<style type="text/css">
+/**CREDIT**- Inspiration - Subtle Patterns:  **/;
+.header .inner-header
+{
+  width:250px;
+  margin: 0 auto;
+  position:relative;
+}
+
+.jsthumblogo {
+  position:absolute;
+  top:20px;
+  left:444px;
+  background-position: 0px -5px;
+  z-index: 5000; 
+}
+
+.jsthumblogo a {
+  background: url('./assets/img/jsthumb.jpg') no-repeat;
+  width: 30px;
+  height:40px;
+  display:block;
+  background-position: 0px 5px;
+  text-indent:-9999px;
+  -webkit-transition: 0.10s ease-in;
+  -moz-transition: 0.10s ease-in;
+  
+}
+
+.jsthumblogo a:hover {
+  background-position: 0px 0px;
+
+}
+
+.htmlthumblogo {
+  position:absolute;
+  top:15px;
+  left:379px;
+  background-position: 0px -5px;
+  z-index: 4000;
+}
+
+.htmlthumblogo a {
+  background: url('./assets/img/htmlthumb.png') no-repeat;
+  width: 30px;
+  height:50px;
+  display:block;
+  background-position: 0px 5px;
+  text-indent:-9999px;
+  -webkit-transition: 0.10s ease-in;
+  -moz-transition: 0.10s ease-in;
+  
+}
+
+.htmlthumblogo a:hover {
+  background-position: 0px 0px;
+
+}
+.backbonethumblogo {
+  position:absolute;
+  top:20px;
+  left:510px;
+  background-position: 0px -5px;
+  z-index: 4000;
+}
+
+.backbonethumblogo a {
+  background: url('./assets/img/backbonethumb.png') no-repeat;
+  width: 30px;
+  height:40px;
+  display:block;
+  background-position: 0px 5px;
+  text-indent:-9999px;
+  -webkit-transition: 0.10s ease-in;
+  -moz-transition: 0.10s ease-in;
+}
+
+.backbonethumblogo a:hover {
+  background-position: 0px 0px;
+
+}
+.cssthumblogo {
+  position:absolute;
+  top:15px;
+  left:575px;
+  background-position: 0px -5px;
+  z-index: 4000;
+}
+
+.cssthumblogo a {
+  background: url('./assets/img/cssthumb2.png') no-repeat;
+  width: 30px;
+  height:40px;
+  display:block;
+  background-position: -2px 5px;
+  text-indent:-9999px;
+  -webkit-transition: 0.10s ease-in;
+  -moz-transition: 0.10s ease-in;
+  
+}
+
+.cssthumblogo a:hover {
+  background-position: -2px 0px;
+
+}
+
+</style>
+
+
+<style type="text/css">
+ #headerNav LI:nth-child(2){
+    margin-left:20px;
+ }
+</style>
+
+
+<!--Amazing Header Generator: -->
+ <style>
+    .icondropshadow{
+     -webkit-box-shadow: 5px 18px 16px -4px rgba(0, 0, 0, .44);
+    box-shadow: 5px 18px 16px -4px rgba(0, 0, 0, .44);
+    }
+    .icondropshadowdeeper{
+     -webkit-box-shadow: 5px 26px 16px -4px rgba(0, 0, 0, .44);
+    box-shadow: 5px 22px 16px -4px rgba(0, 0, 0, .44);
+    }
+   .iconshadowframe{
+    width: 26px;
+    height: 27px;
+    margin: 0 auto;
+    background-color:rgba(0,0,0,0);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    /*text-align: center;
+    font-size: 2em;
+    min-height: 200px;
+    display: table-cell;
+    vertical-align: bottom;*/
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .menushadowframe{
+    width: 26px;
+    height: 27px;
+    margin: 0 auto;
+    background-color:rgba(0,0,0,0);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    /*text-align: center;
+    font-size: 2em;
+    min-height: 200px;
+    display: table-cell;
+    vertical-align: bottom;*/
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+ </style>
+
+
+<div class="inner-header">
+      <div class="jsthumblogo icondropshadow iconshadowframe">
+      <a href="/">Subtle patterns</a>   
+      </div>
+      <div class="htmlthumblogo icondropshadowdeeper iconshadowframe">
+      <a href="/">44</a>   
+      </div>
+      <div class="backbonethumblogo icondropshadow iconshadowframe">
+      <a href="/">44</a>   
+      </div>
+      <div class="cssthumblogo icondropshadowdeeper iconshadowframe">
+      <a href="/">44</a>   
+      </div>
+ </div> 
+    
+
+
+<div class="g">
+
+
+<div class="backgroundGradient">
+<!--div class="backgroundWhiteGradient"-->
+
+ <nav id="headerNav">
+  <ul>
+   <li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_9.png" height="100px"></a></li>
+   <!--li><a href="/"><img src="/assets/img/NashHeaderUp.png" height="100px"></a></li-->
+   <li>
+     <div class="cf">
+      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" /></a> 
+      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+     </div>    
+   </li>
+   <li>
+     <div class="cf">
+      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" /></a>
+      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+   </div>    
+   </li>
+   </li>
+   <li>
+     <div class="cf">
+      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" />
+</a>      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+    </div>    
+   </li>
+   <li>
+     <div class="cf">
+      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" />
+</a>      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+  </a>  </div>    
+   </li>
+  </ul>
+ </nav>
+
+</div>
+
+
+</div>
+
+<style type="text/css">
+a[href*="github.com"]{
+    padding-left:18px;
+    background:url(http://www.google.com/s2/u/0/favicons?domain=gist.github.com) left center no-repeat;
+}​
+a[href*="requirejs.org"]{
+    padding-left:18px;
+    background:url(http://www.google.com/s2/u/0/favicons?domain=gist.github.com) left center no-repeat;
+}​
+</style>
+
+<div style="margin-top:3px;"> 
+<a href=http://github.com>Switch AMD Header Module</a>​
+<a href=http://github.com>GitHub</a>​
+<a href="#/headerWhite">White Module</a>​
+<a href="#/headerBlack">Black Module</a>​
+<a href="#/content1">Content1</a>
+</div>
+
+<div class="backgroundGradient2" style="margin-top:3px;"> </div>
+
+<h1><i>Just Stumbling Through Paradise...</i></h1>
+Stumbling through Time. Tumbling through space.
+
+<ul>
+  <li><h2>TODO</h2></li>
+  <li>Welcome Screen</li>
+  <li>HTML 5 logo in CSS</li>
+  <li>CSS3 Animation Transform Left & Bounce Tutorial</li>
+  <li>CSS3 Tooltip, or Information Bubble.</li>
+  <li>CSS3 Background Gradient, Border Gradient, and box shadow tutorial.</li>
+  <li>Charts Tutorial</li>
+  <li>Styling a simple horizontal Link-Bar Tutorial.</li>
+  <li>Gimp: Studio Light Space Grid Effect, and CSS3 Layers.</li>
+  <li>Gimp: Icon Suggestions for Underscore, JavaScript Shields.</li>
+  <li>CSS3 Text Shadow and Google Fonts</li>
+</ul>
+
+<div class="backgroundGradient3"> </div>
+
+<div class="backgroundGradient2" style="margin-top:3px; height:10px;"> </div>
+
+ <a href="#/headerDEV">New Header Black</a>
+ <a href="#/headerWhite">New Header White</a>
+ <a href="#/projects">Template Page</a>
+
+
+<div class="backgroundGradient3" style="height:10px;"> </div>
+ 
+       <div class="previewWindow icondropshadow">
+      <a href="/">4</a>   
+      </div>
+
+      <div class="previewWindow icondropshadow">
+      <img src="./assets/img/jsthumb.jpg" />
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+      <div id="page">
+    <!--CREDITS: http://backbonetutorials.com/examples/modular-backbone/#-->
+    Loading....
+  </div>
+
+<style type="text/css">
+/*CREDITS: http://sixrevisions.com/css/css-only-tooltips/;*/
+.tooltip {
+  border-bottom: 1px dotted #000000;
+  color: #000000; outline: none;
+  cursor: help; text-decoration: none;
+  position: relative;
+}
+.tooltip span {
+  margin-left: -999em;
+  position: absolute;
+}
+
+.tooltip:hover span {
+  font-family: Calibri, Tahoma, Geneva, sans-serif;
+  position: absolute;
+  left: 1em;
+  top: 2em;
+  z-index: 99;
+  margin-left: 0;
+  width: 250px;
+}
+.tooltip:hover img {
+  border: 0;
+  margin: -10px 0 0 -55px;
+  float: left;
+  position: absolute;
+}
+.tooltip:hover em {
+  font-family: Candara, Tahoma, Geneva, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+
+.classic { background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334; }
+.help { background: #9FDAEE; border: 1px solid #2BB0D7; }
+.info { background: #9FDAEE; border: 1px solid #2BB0D7; }
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
+
+border-radius: 5px 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+
+
+</style>
+
+
+<h1>Examples of CSS ToolTips!</h1>
+<p>Here are some examples of a <a class="tooltip" href="#">Classic<span class="classic">This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>, <a class="tooltip" href="#">Critical<span class="custom critical"><img src="./assets/img/error.png" alt="Error" height="48" width="48" /><em>Critical</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>, <a class="tooltip" href="#">Help<span class="custom help"><img src="./assets/img/question.png" alt="Help" height="48" width="48" /><em>Help</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a>, <a class="tooltip" href="#">Information<span class="custom info"><img src="./assets/img/information.png" alt="Information" height="48" width="48" /><em>Information</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a> and <a class="tooltip" href="#">Warning<span class="custom warning"><img src="./assets/img/warning.png" alt="Warning" height="48" width="48" /><em>Warning</em>This is just an example of what you can do using a CSS tooltip, feel free to get creative and produce your own!</span></a> CSS powered tooltip. This is just an example of what you can do so feel free to get creative and produce your own!</p>
+
+
+ <!--div class="cf">
+  <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" />
+</a>  <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+  <a href=""><img class="thumb" src="./assets/img/jsthumb.jpg" />  
+</d</a>iv>
+
+ <div class="cf">
+  <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" />
+</a>  <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+  <a href=""><img class="thumb" src="./assets/img/htmlthumb.png" />  
+<</a>/div-->
+<!--header style="background:black; width:100%;">
+  <div id="logoBox" style="border:1px black inset; float:left; width:30%">Logo</div>
+  <div id="menuBox" style="border:1px red inset; float:left; width:70%">Menu</div>
+</header-->
+
+<!--style type="text/css">
+
+#header {
+margin-left: 0;
+margin-bottom: 85px;
+background-image: url(images/top_line_bg.png);
+height: 98px;
+}
+
+#header .inner-header {
+width: 950px;
+margin: 0 auto;
+position: relative;
+}
+
+#jsthumblogo {
+position: absolute;
+left: 400px;
+background-position: 0px -5px;
+z-index: 5000;
+}
+
+#topmenu {
+position: absolute;
+top: 13px;
+left: 0px;
+}
+
+#topmenu .menu {
+margin: 0;
+list-style: none;
+}
+
+#topmenu .menu li {
+float: left;
+margin-right: 0;
+padding-bottom: 11px;
+letter-spacing: 1px;
+}
+
+</style-->
+
+
+<!--div id="header">
+    <div class="inner-header">
+      <div id="jsthumblogo">
+      <a href="/">Subtle patterns</a>   
+      </div>
+      
+      <div id="topmenu">
+          <div class="menu">
+            <div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-1026" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1026"><a href="http://subtlepatterns.com/">Home</a></li>
+<li id="menu-item-1028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a href="http://subtlepatterns.com/?page_id=343">Snacks</a></li>
+<li id="menu-item-1029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1029"><a href="http://subtlepatterns.com/?page_id=871">Submit</a></li>
+<li id="menu-item-1027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1027"><a href="http://subtlepatterns.com/?page_id=890">About</a></li>
+</ul></div>         </div>
+      </div>
+
+      <div id="submenu">
+        
+        <div id="topSearch">
+          
+
+<div class="search">
+  
+  <form method="get" class="searchform" id="searchform-1" action="http://subtlepatterns.com/">
+    
+    <div>
+      <input class="searchtext" type="text" name="s" id="searchtext-1" value="Tip: Search for light or dark" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+      <input type="submit" class="searchsubmit" name="submit" id="searchsubmit-1" value="Search">
+    </div>
+  
+  </form>
+
+</div>
+        </div>            
+      </div>
+
+  
+        <ul id="socialbar">  
+            <li class="facebook"><a href="http://www.facebook.com/subtlepatterns">Facebook</a></li>  
+            <li class="twitter"><a href="http://www.twitter.com/subtlepattern">Twitter</a></li>  
+            <li class="rss"><a href="http://feeds.feedburner.com/SubtlePatterns">RSS</a></li>  
+        </ul>  
+          
+
+    </div>
+  </div-->
