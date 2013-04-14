@@ -5,10 +5,12 @@ define([
   'use!backbone',
   'views/projects/list',
   "modules/headerDEV1",
+  "modules/headerBlack_1",
+  "modules/headerWhite_1",
   "modules/ModuleHeader",
   "modules/ModuleContentHome"
 
-], function($, _, Backbone, projectListView, headerDEV1, ModuleHeader, ModuleContentHome ){
+], function($, _, Backbone, projectListView, headerDEV1, headerBlack_1, headerWhite_1, ModuleHeader, ModuleContentHome ){
 
   var AppRouter = Backbone.Router.extend({
 
@@ -26,10 +28,10 @@ define([
     },
     index: function(hash) {
       var route = this;
-           /*Render-headerDEV1*/
-      var headerDEV1module = new headerDEV1.Views.headerDEV1();
+           /*Render-headerBlack_1*/
+      var headerBlack_1module = new headerBlack_1.Views.headerBlack_1();
       // Attach the header to the DOM
-      headerDEV1module.render(function(el) {
+      headerBlack_1module.render(function(el) {
         $("#headerMain").html(el);
 
         // Fix for hashes in pushState and hash fragment
@@ -68,9 +70,28 @@ define([
 
     },
     headerRouter: function(hash){
-      alert('router-header')
-      var route = this;
-      /*Render-ModuleHeader*/
+
+     var route = this;
+      /*Render-headerBlack_1*/
+      var headerBlack_1module = new headerBlack_1.Views.headerBlack_1();
+      // Attach the header to the DOM
+      headerBlack_1module.render(function(el) {
+        $("#headerMain").html(el);
+
+        // Fix for hashes in pushState and hash fragment
+        if (hash && !route._alreadyTriggered) {
+          // Reset to home, pushState support automatically converts hashes
+          Backbone.history.navigate("", false);
+
+          // Trigger the default browser behavior
+          location.hash = hash;
+
+          // Set an internal flag to stop recursive looping
+          route._alreadyTriggered = true;
+        }
+      }); /**-**/
+
+      /*Render-ModuleHeader
       var headerModule = new ModuleHeader.Views.Tutorial();
       // Attach the header to the DOM
       headerModule.render(function(el) {

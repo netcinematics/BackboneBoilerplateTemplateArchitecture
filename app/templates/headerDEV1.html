@@ -180,16 +180,18 @@
 </style>
 
 <style type="text/css">
-.cf {
+
+.ribbonOver {
   position:relative;
   height:100px;
   width:65px;
   margin:0 auto;  
 }
-.cf .top, .cf .bottom {
+
+/****************************RIBBONS-DEPRECATED******************/
+.ribbonOver .ribbonTop, .ribbonOver .ribbonBottom {
   position:absolute;
-  left:0;
-  top:0;
+  display:none;
   -webkit-transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -o-transition: opacity .25s ease-in-out;
@@ -198,7 +200,29 @@
 
 }
 
-.cf img.top:hover {
+.ribbonOver img.top:hover {
+  opacity:0;
+}
+
+.imageMouseOver {
+  position:relative;
+  height:100px;
+  width:100%;
+  margin:0 auto;  
+}
+.imageMouseOver .ribbonTop, .imageMouseOver .ribbonBottom {
+  position:absolute;
+  left:-20;
+  top:-55;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out; 
+  transition: opacity .25s ease-in-out;
+
+}
+
+.imageMouseOver img.ribbonTop:hover {
   opacity:0;
 }
 
@@ -218,6 +242,14 @@ box-shadow:
 
 }
 </style>
+
+<style>
+.headerWhiteFade img, .headerBlackGrid img{
+  left:-20px;
+  top:-55px;
+}
+</style>
+
 
 <style type="text/css">
 
@@ -398,16 +430,28 @@ box-shadow:
 
 
 <div class="inner-header">
-      <div class="jsthumblogo icondropshadow iconshadowframe">
-      <a href="/">Subtle patterns</a>   
-      </div>
-      <div class="htmlthumblogo icondropshadowdeeper iconshadowframe">
+      <div class="htmlthumblogo icondropshadowdeeper iconshadowframe" style="left:125px;">
+      <a href="/">44</a>   
+      </div>  
+      <div class="jsthumblogo icondropshadow iconshadowframe" style="left:190px;">
       <a href="/">44</a>   
       </div>
-      <div class="backbonethumblogo icondropshadow iconshadowframe">
+      <div class="cssthumblogo icondropshadowdeeper iconshadowframe" style="left:255px;">
+      <a href="/">44</a>   
+      </div>      
+      <div class="backbonethumblogo icondropshadow iconshadowframe" style="left:320px;">
       <a href="/">44</a>   
       </div>
-      <div class="cssthumblogo icondropshadowdeeper iconshadowframe">
+      <div class="jsthumblogo icondropshadow iconshadowframe" style="left:385px;">
+      <a href="/">44</a>   
+      </div>
+      <div class="htmlthumblogo icondropshadowdeeper iconshadowframe" style="left:450px;">
+      <a href="/">44</a>   
+      </div>
+      <div class="backbonethumblogo icondropshadow iconshadowframe" style="left:515px;">
+      <a href="/">44</a>   
+      </div>
+      <div class="cssthumblogo icondropshadowdeeper iconshadowframe" style="left:580px;">
       <a href="/">44</a>   
       </div>
  </div> 
@@ -419,35 +463,51 @@ box-shadow:
 
 <div class="backgroundGradient">
 <!--div class="backgroundWhiteGradient"-->
+<!--section style="z-index:10; layout:absolute; top:-3px; float:right;">HHHHHHHHHHHHHHHHHHHHHEEEEEEEEEEEEEEEEEEEEEEELLLLLLLLLLLLLLOOOOOOOOOOOOOO
+</section-->
 
  <nav id="headerNav">
   <ul>
-   <li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_9.png" height="100px"></a></li>
-   <!--li><a href="/"><img src="/assets/img/NashHeaderUp.png" height="100px"></a></li-->
+   <!--li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_9.png" height="100px"></a></li-->
+   <!--li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_6.png" height="60px"></a></li>
+   <li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_7.png" height="60px"></a></li>
+   <li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_21.png" height="60px"></a></li>
+   <li><a href="/"><img src="/assets/img/NashHeader_SuperSpace_22.png" height="60px"></a></li-->
+   <!--li><a href="/"><img src="/assets/img/NashHeaderUp.png" height="60px"></a></li>
+   <li><a href="/"><img src="/assets/img/NashHeaderOver.png" height="60px"></a></li>
+   <li><a href="/"><img src="/assets/img/NashHeaderUp.png" height="100px"></a></li-->
+   <li> 
+    <div class="headerBlackGrid imageMouseOver">
+      <a href=""><img class="ribbonBottom" src="./assets/img/NashHeader_SuperSpace_6.png" /></a> 
+      <a href=""><img class="ribbonTop" src="./assets/img/NashHeader_SuperSpace_7.png" /></a>  
+     </div>
+   </li>
+
+   <li> 
+    <div class="headerWhiteFade imageMouseOver">
+      <a href=""><img class="ribbonBottom" src="./assets/img/NashHeader_SuperSpace_21.png" /></a> 
+      <a href=""><img class="ribbonTop" src="./assets/img/NashHeader_SuperSpace_22.png" /></a>  
+     </div>
+   </li>   
+
    <li>
-     <div class="cf">
-      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" /></a> 
-      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+     <div class="ribbonOver">
+      <a href=""><img class="ribbonBottom" src="./assets/img/TopRibbonUp.png" /></a> 
+      <a href=""><img class="ribbonTop" src="./assets/img/TopRibbonRipple.png" /></a>  
      </div>    
    </li>
    <li>
-     <div class="cf">
-      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" /></a>
-      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+     <div class="ribbonOver">
+      <a href=""><img class="ribbonBottom" src="./assets/img/TopRibbonUp.png" /></a>
+      <a href=""><img class="ribbonTop" src="./assets/img/TopRibbonRipple.png" /></a>  
    </div>    
    </li>
    </li>
    <li>
-     <div class="cf">
-      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" />
-</a>      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
+     <div class="ribbonOver">
+      <a href=""><img class="ribbonBottom" src="./assets/img/TopRibbonUp.png" />
+</a>      <a href=""><img class="ribbonTop" src="./assets/img/TopRibbonRipple.png" /></a>  
     </div>    
-   </li>
-   <li>
-     <div class="cf">
-      <a href=""><img class="bottom" src="./assets/img/TopRibbonUp.png" />
-</a>      <a href=""><img class="top" src="./assets/img/TopRibbonRipple.png" /></a>  
-  </a>  </div>    
    </li>
   </ul>
  </nav>

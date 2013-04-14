@@ -10,10 +10,11 @@ require([
   "modules/ModuleFooter",
   "modules/ModuleContentHome",
   "modules/headerDEV1",
+  "modules/headerBlack_1",
   "router"  
 ],
 
-function(namespace, $, Backbone, ModuleHeader, ModuleFooter, ModuleContentHome, headerDEV1, ExternalRouter) {
+function(namespace, $, Backbone, ModuleHeader, ModuleFooter, ModuleContentHome, headerDEV1, headerBlack1, ExternalRouter) {
 
   // Defining the application router, you can attach sub routers here.
   /*
